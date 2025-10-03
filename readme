@@ -1,7 +1,34 @@
-#5e7f79
-#d1dedc
-#101417
-#181e22
-#4a6b67
-#20272c
-#cdd7d6
+# MEDHAVARDHAN Website
+
+## About The Project
+
+This is the front page for the MEDHAVARDHAN educational platform. It features a modern and futuristic design where students can prepare for various competitive exams like JEE, NATA, UCEED, and general competitions.
+
+## Features
+
+*   Modern and futuristic design
+*   Fully responsive layout that works on all screen sizes
+*   A dedicated hamburger menu for mobile navigation
+*   Separate sections for Features, Courses, and Quiz Leagues
+
+## Technology Used
+
+*   HTML5
+*   CSS3
+*   JavaScript
+
+## How to View
+
+To view the website, open the `index.html` file located in this folder in any web browser.
+
+## Color Theme
+
+The website uses the following color palette:
+
+*   #5e7f79
+*   #d1dedc
+*   #101417
+*   #181e22
+*   #4a6b67
+*   #20272c
+*   #cdd7d6
