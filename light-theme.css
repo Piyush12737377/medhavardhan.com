@@ -1,71 +1,69 @@
-/* Light Theme Vars & Overrides */
-
-/* 
-   Light mode body class overrides root vars
-*/
-body.light-mode {
+body.light-mode { /* body.light-mode */
     --dark-bg: #4a6b67;
     --dark-bg-secondary: #91a5a3;
     --dark-bg-tertiary: #4a6b67;
     --accent-primary: #d4e0de;
     --accent-secondary: #4a6b67;
-    --text-light: #e6e6e6; /* Dark text for light bg */
+    --text-light: #e6e6e6;
     --text-light-muted: #fcfdff;
 }
 
-.main-nav {
+.main-nav { /* main-nav */
     background-color: var(--dark-bg);
     color: var(--text-light);
 }
 
-body.light-mode .main-header {
+body.light-mode .main-header { /* main-header */
     background-color: #4a6b67;
     color: var(--text-light);
 }
 
-body.light-mode .main-nav ul li a {
+body.light-mode .main-nav ul li a { /* Home */
     color: var(--text-light-muted);
 }
 
-body.light-mode .main-nav ul li a:hover,
-body.light-mode .main-nav ul li a.active {
+body.light-mode .main-nav ul li a:hover, /* Home */
+body.light-mode .main-nav ul li a.active { /* Home */
     color: var(--accent-primary);
 }
-h1.hero-title {
+h1.hero-title { /* ACHIVE YOUR DREAM RANK */
     color: #ffffff;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
 }
 
-.hero-subtitle {
+.hero-subtitle { /* India's Most Comprehensive Learning Platform. */
     color: #c6dbd9;
 }
-.cta-button {
+body.light-mode .hero-subtitle { /* India's Most Comprehensive Learning Platform. */
+    color: var(--accent-primary);
+}  
+.cta-button { /* Explore Programs */
     border: 2px solid var(--dark-bg-tertiary);
     background-color: var(--dark-bg-tertiary);
-    padding: 0.9rem 2.2rem; /* Smaller button */
+    padding: 0.9rem 2.2rem;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
-body.light-mode .cta-button:hover {
+body.light-mode .cta-button:hover { /* Explore Programs */
     color: var(--accent-primary);
     background-color: transparent;
     color: var(--dark-bg-tertiary);
 }
 
-body.light-mode .cta-button {
-    color: #ffffff; /* Keep button text light */
+body.light-mode .cta-button { /* Explore Programs */
+    color: #ffffff;
 }
 
-body.light-mode .hero-description {
+body.light-mode .hero-description { /* Prepare for Class 10-12... */
     color: #2e4946;
 }
 
-body.light-mode .main-nav {
+body.light-mode .main-nav { /* main-nav */
     background-color: var(--dark-bg);
 }
 
-body.light-mode .course-card:hover {
+body.light-mode .course-card:hover { /* JEE (Main + Advanced) */
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
