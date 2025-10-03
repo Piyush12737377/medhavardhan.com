@@ -1,0 +1,205 @@
+/* --- Responsive Media Queries --- */
+
+/* Tablets & Small Desktops */
+@media (max-width: 992px) {
+    .container { /* container */
+        padding: 0 2rem;
+
+    }
+    .main-nav ul li { /* main-nav ul li */
+        margin-left: 100%;
+    }
+    .hero-title { /* ACHIVE YOUR DREAM RANK */
+        font-size: 0.9rem;
+    }
+    .hero-subtitle { /* India's Most Comprehensive Learning Platform. */
+        font-size: 1.8rem;
+    }
+    .section-title { /* Why Choose MEDHAVARDHAN? */
+        font-size: 2.2rem;
+    }
+    .courses-grid { /* courses-grid */
+
+    }
+    .comparison-table { /* comparison-table */
+
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body { /* body */
+        font-size: 88%;
+    }
+
+    .container { /* container */
+        
+
+    }
+
+    .logo-placeholder { /* MEDHAVARDHAN */
+        z-index: 1001;
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .hamburger-menu { /* hamburger-menu */
+        display: block;
+    }
+
+    .main-nav { /* main-nav */
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(16, 20, 23, 0.95);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    
+    .main-nav ul { /* main-nav ul */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav .theme-switcher { /* theme-switcher */
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+
+    .main-nav ul li { /* main-nav ul li */
+        margin: 1rem 0;
+        margin-left: 0;
+    }
+    .main-nav ul li a { /* Home */
+        font-size: 1.3rem;
+    }
+
+    .main-nav.is-active { /* main-nav.is-active */
+        left: 0;
+    }
+
+    .hero-section { /* hero-section */
+        padding-top: 80px;
+    }
+
+    h1.hero-title { /* ACHIVE YOUR DREAM RANK */
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    }
+
+    h2.hero-subtitle { /* India's Most Comprehensive Learning Platform. */
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    }
+
+    .hero-description { /* Prepare for Class 10-12... */
+        font-size: 0.7rem;
+        max-width: 90%;
+        font-weight: 550;
+    }
+
+    .cta-button { /* Explore Programs */
+        padding: 0.7rem 1.8rem;
+        font-size: 0.9rem;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .content-section { /* content-section */
+        padding: 4rem 0;
+    }
+
+    .section-title { /* Why Choose MEDHAVARDHAN? */
+        font-size: 0.96rem;
+    }
+
+    .section-text { /* Master every line... */
+        font-size: 0.8rem;
+        max-width: 90%;
+        line-height: 1.5;
+
+    }
+
+    .comparison-table { /* comparison-table */
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+        font-size: 0.1rem;
+    }
+    .table-header > div, .table-row > div {
+        padding: 1rem 0.8rem;
+        font-size: 0.6rem;
+    }
+
+    .courses-grid { /* courses-grid */
+        grid-template-columns: 2fr;
+    }
+
+    .course-card { /* JEE (Main + Advanced) */
+        padding: 1.5rem;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .card-title { /* JEE (Main + Advanced) */
+        font-size: 0.9rem;
+    }
+
+    .card-text { /* Comprehensive preparation... */
+        font-size: 0.75rem;
+    }
+
+    .main-footer { /* main-footer */
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-title { /* ACHIVE YOUR DREAM RANK */
+        font-size: 0.8rem;
+    }
+    .hero-subtitle { /* India's Most Comprehensive Learning Platform. */
+        font-size: 0.7rem;  
+    }
+    .hero-description { /* Prepare for Class 10-12... */
+        font-size: 0.65rem;
+    }
+    .cta-button { /* Explore Programs */
+        padding: 0.6rem 1.5rem;
+        font-size: 0.8rem;
+    }
+    .section-title { /* Why Choose MEDHAVARDHAN? */
+        font-size: 0.9rem;
+    }
+    .table-header { /* Feature */
+        font-size: 0.75rem;
+    }
+
+    .table-header > div { /* MEDHAVARDHAN */
+        padding: 0.8rem 0.5rem;
+    }
+
+    .table-row > div { /* Interactive Live Classes */
+        padding: 0.8rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    .card-title { /* JEE (Main + Advanced) */
+        font-size: 1rem;
+    }
+    .card-text { /* Comprehensive preparation... */
+        font-size: 0.7rem;
+    }
+    .main-footer { /* main-footer */
+        font-size: 0.7rem;
+        padding: 2rem 0;
+    }
+}
