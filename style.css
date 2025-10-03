@@ -1,5 +1,5 @@
-/* Color Palette */
-:root {
+/* :root */
+:root { 
     --dark-bg: #101417;
     --dark-bg-secondary: #181e22;
     --dark-bg-tertiary: #20272c;
@@ -9,50 +9,49 @@
     --text-light-muted: #cdd7d6;
 }
 
-/* Reset & Typography */
-* {
+* { /* * */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
+html { /* html */
     scroll-behavior: smooth;
 }
 
-body {
+body { /* body */
     font-family: 'Exo 2', sans-serif;
     background-color: var(--dark-bg);
     color: var(--text-light);
     line-height: 1.6;
     font-weight: 300;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden;
 }
 
-.container {
+.container { /* container */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-h1, h2, h3 {
+h1, h2, h3 { /* h1, h2, h3 */
     font-weight: 400;
     color: var(--text-light);
     line-height: 1.2;
 }
 
-a {
+a { /* a */
     color: var(--accent-primary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-a:hover {
+a:hover { /* a:hover */
     color: var(--text-light);
 }
 
-/* Header & Nav */
-.main-header {
+/* main-header */
+.main-header { 
     background-color: rgba(16, 20, 23, 0.8);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--dark-bg-tertiary);
@@ -63,13 +62,13 @@ a:hover {
     z-index: 1000;
 }
 
-.main-header .container {
+.main-header .container { /* main-header .container */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo-placeholder {
+.logo-placeholder { /* MEDHAVARDHAN */
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -78,37 +77,35 @@ a:hover {
     padding: 0.5rem 1rem;
 }
 
-/* Adjust navbar */
-.main-nav {
+.main-nav { /* main-nav */
     margin-left: auto;
     display: flex;
     align-items: center;
 }
 
-.main-nav ul {
+.main-nav ul { /* main-nav ul */
     list-style: none;
     display: flex;
 }
 
-.main-nav ul li {
+.main-nav ul li { /* main-nav ul li */
     margin-left: 2rem;
 }
 
-.main-nav ul li a {
+.main-nav ul li a { /* Home */
     font-weight: 400;
     letter-spacing: 1px;
     padding: 0.5rem 0;
     border-bottom: 2px solid transparent;
 }
 
-.main-nav ul li a:hover,
-.main-nav ul li a.active {
+.main-nav ul li a:hover, /* Home */
+.main-nav ul li a.active { /* Home */
     color: var(--text-light);
     border-bottom-color: var(--accent-primary);
 }
 
-/* Theme Switcher */
-.theme-switcher {
+.theme-switcher { /* theme-switcher */
     margin-left: 2rem;
 }
 
@@ -116,7 +113,7 @@ a:hover {
     display: none;
 }
 
-.theme-toggle-label {
+.theme-toggle-label { /* theme-toggle-label */
     display: flex;
     align-items: center;
     position: relative;
@@ -130,7 +127,7 @@ a:hover {
     border: 1px solid var(--accent-secondary);
 }
 
-.toggle-indicator {
+.toggle-indicator { /* toggle-indicator */
     position: absolute;
     top: 2px;
     left: 3px;
@@ -140,7 +137,6 @@ a:hover {
     border-radius: 50%;
     transition: all 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-    /* Icon setup */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23101417' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3E%3C/path%3E%3C/svg%3E");
     background-size: 16px;
     background-repeat: no-repeat;
@@ -151,15 +147,14 @@ a:hover {
     background-color: var(--accent-primary);
 }
 
-.theme-toggle-checkbox:checked + .theme-toggle-label .toggle-indicator {
+.theme-toggle-checkbox:checked + .theme-toggle-label .toggle-indicator { /* toggle-indicator */
     transform: translateX(29px);
     background-color: var(--dark-bg);
-    /* Sun icon */
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'%3E%3C/circle%3E%3Cline x1='12' y1='1' x2='12' y2='3'%3E%3C/line%3E%3Cline x1='12' y1='21' x2='12' y2='23'%3E%3C/line%3E%3Cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'%3E%3C/line%3E%3Cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'%3E%3C/line%3E%3Cline x1='1' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='21' y1='12' x2='23' y2='12'%3E%3C/line%3E%3Cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'%3E%3C/line%3E%3Cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'%3E%3C/line%3E%3C/svg%3E");
 }
 
-.hamburger-menu {
-    display: none; /* Hide desktop */
+.hamburger-menu { /* hamburger-menu */
+    display: none;
     background: none;
     border: none;
     cursor: pointer;
@@ -167,7 +162,7 @@ a:hover {
     z-index: 1001;
 }
 
-.hamburger-menu .bar {
+.hamburger-menu .bar { /* hamburger-menu .bar */
     display: block;
     width: 25px;
     height: 3px;
@@ -176,57 +171,56 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
-.hamburger-menu.is-active .bar:nth-child(2) { opacity: 0; }
-.hamburger-menu.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
-.hamburger-menu.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+.hamburger-menu.is-active .bar:nth-child(2) { opacity: 0; } /* hamburger-menu.is-active */
+.hamburger-menu.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); } /* hamburger-menu.is-active */
+.hamburger-menu.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); } /* hamburger-menu.is-active */
 
 
-/* Hero Section */
-.hero-section {
+.hero-section { /* hero-section */
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 80px 2rem 0; /* Header height padding */
+    padding: 80px 2rem 0;
     position: relative;
     overflow: hidden;
     background-color: var(--dark-bg-secondary);
 }
 
-.hero-content {
+.hero-content { /* hero-content */
     z-index: 2;
     max-width: 950px;
 }
 
-.hero-title {
-    font-size: 4rem; /* Was 4.5rem */
+.hero-title { /* ACHIVE YOUR DREAM RANK */
+    font-size: 4rem;
     font-weight: 700;
     letter-spacing: -1.5px;
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1); /* Light mode shadow */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
 }
 
-.hero-subtitle {
-    font-size: 1.8rem; /* Was 2.1rem */
+.hero-subtitle { /* India's Most Comprehensive Learning Platform. */
+    font-size: 1.8rem;
     font-weight: 400;
     letter-spacing: 5px;
     color: var(--accent-primary);
-    margin-bottom: 1.5rem; /* More space */
+    margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
-.hero-description {
-    font-size: 1rem; /* Was 1.1rem */
-    color: #899694; /* Brighter color */
+.hero-description { /* Prepare for Class 10-12... */
+    font-size: 1rem;
+    color: #899694;
     max-width: 600px;
-    margin: 0 auto 2.5rem; /* More margin bottom */
+    margin: 0 auto 2.5rem;
 }
 
-.cta-button {
+.cta-button { /* Explore Programs */
     display: inline-block;
     background-color: var(--accent-primary);
     color: var(--dark-bg);
-    padding: 0.9rem 2.2rem; /* Smaller button */
+    padding: 0.9rem 2.2rem;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -234,12 +228,12 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:hover { /* Explore Programs */
     background-color: transparent;
     color: var(--accent-primary);
 }
 
-.hero-background-shape {
+.hero-background-shape { /* hero-background-shape */
     position: absolute;
     bottom: -50%;
     left: 50%;
@@ -251,19 +245,18 @@ a:hover {
     opacity: 0.5;
 }
 
-/* Content Sections */
-.content-section {
+.content-section { /* content-section */
     padding: 6rem 0;
 }
 
-.section-title {
+.section-title { /* Why Choose MEDHAVARDHAN? */
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
     position: relative;
 }
 
-.section-title::after {
+.section-title::after { /* section-title::after */
     content: '';
     display: block;
     width: 60px;
@@ -272,7 +265,7 @@ a:hover {
     margin: 0.5rem auto 0;
 }
 
-.section-text {
+.section-text { /* Master every line... */
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -280,12 +273,11 @@ a:hover {
     color: var(--text-light-muted);
 }
 
-.dark-section {
+.dark-section { /* dark-section */
     background-color: var(--dark-bg);
 }
 
-/* Comparison Table */
-.comparison-table {
+.comparison-table { /* comparison-table */
     max-width: 900px;
     margin: 4rem auto 0;
     border: 1px solid var(--dark-bg-tertiary);
@@ -294,64 +286,63 @@ a:hover {
     box-shadow: 4px 4px 8px rgba(0,0,0,1);
 }
 
-.table-header, .table-row {
+.table-header, .table-row { /* table-header, table-row */
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     align-items: center;
 }
 
-.table-header {
+.table-header { /* Feature */
     background-color: #3e5855;
     font-weight: 600;
     font-size: 1.1rem;
     letter-spacing: 1px;
 }
 
-.table-header > div, .table-row > div {
+.table-header > div, .table-row > div { /* MEDHAVARDHAN */
     padding: 1.5rem;
     text-align: center;
 }
 
-.table-row {
+.table-row { /* Interactive Live Classes */
     border-top: 1px solid var(--dark-bg-tertiary);
 }
 
-.feature-col {
+.feature-col { /* Interactive Live Classes */
     text-align: left !important;
     font-weight: 600;
 }
 
-.medhavardhan-col .check-mark {
+.medhavardhan-col .check-mark { /* ✔ */
     color: var(--accent-primary);
     font-weight: 700;
     margin-right: 0.5rem;
 }
 
-.others-col .cross-mark {
-    color: #7a8583; /* Muted color */
+.others-col .cross-mark { /* ✖ */
+    color: #7a8583;
     margin-right: 0.5rem;
 }
 
-/* Courses Grid */
-.courses-grid {
+.courses-grid { /* courses-grid */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Show two cards per row */
-    justify-content: center; /* Center the cards */
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     gap: 2rem;
     margin-top: 4rem;
 }
 
-.course-card {
+.course-card { /* JEE (Main + Advanced) */
     background-color: var(--dark-bg-secondary);
     border: 1px solid var(--dark-bg-tertiary);
-    padding: 2rem 1.5rem; /* Smaller card padding */
+    padding: 2rem 1.5rem;
     text-align: center;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.course-card:hover {
+.course-card:hover { /* JEE (Main + Advanced) */
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     border-color: var(--accent-secondary);
@@ -365,140 +356,54 @@ a:hover {
     color: var(--accent-primary);
 }
 
-.card-title {
-    font-size: 1.3rem; /* Smaller card title */
+.card-title { /* JEE (Main + Advanced) */
+    font-size: 1.3rem;
     margin-bottom: 1rem;
     color: var(--text-light);
 }
 
-.card-text {
-    font-size: 0.9rem; /* Smaller card text */
+.card-text { /* Comprehensive preparation... */
+    font-size: 0.9rem;
     color: var(--text-light-muted);
 }
 
-/* Footer */
-.main-footer {
+.main-footer { /* main-footer */
     background-color: var(--dark-bg);
     border-top: 1px solid var(--dark-bg-tertiary);
-    padding: 2rem 0;
-    text-align: center;
-    color: var(--text-light-muted);
-    font-size: 0.8rem; /* Smaller footer text */
+    padding: 3rem 0;
+    color: #90afaa;
+    font-size: 0.8rem;
 }
 
-
-/* Responsive Media Queries */
-
-/* Tablets & Small Desktops */
-@media (max-width: 992px) {
-    .hero-subtitle {
-        font-size: 1.8rem;
-    }
-    .section-title {
-        font-size: 2.2rem;
-    }
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-    body {
-        font-size: 90%; /* Reduce base font size for all text */
-    }
-
-    .logo-placeholder {
-        z-index: 1001; /* Logo above mobile nav */
-        font-size: 1.1rem; /* Smaller logo text */
-        padding: 0.4rem 0.8rem; /* Smaller logo padding */
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .main-nav {
-        position: fixed;
-        top: 0;
-        left: 100%; /* Start off-screen */
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(16, 20, 23, 0.95); /* Slightly transparent bg */
-        backdrop-filter: blur(10px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-    }
-    
-    .main-nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .main-nav .theme-switcher {
-        margin-top: 2rem; /* Add space above the switcher in mobile nav */
-        margin-left: 0; /* Reset desktop margin */
-    }
-
-    .main-nav ul li {
-        margin: 1rem 0; /* Reduced margin */
-        margin-left: 0; /* Reset desktop margin */
-    }
-    .main-nav ul li a {
-        font-size: 1.3rem; /* Smaller nav links */
-    }
-
-    .main-nav.is-active {
-        left: 0; /* Slide in */
-    }
-
-    .hero-section {
-        padding-top: 80px;
-    }
-
-    .hero-title {
-        font-size: 2.2rem; /* Smaller hero title */
-        letter-spacing: -1px;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem; /* Smaller tagline */
-        letter-spacing: 3px;
-    }
-
-    .hero-description {
-        font-size: 0.9rem; /* Smaller description */
-        max-width: 90%;
-    }
-
-    .cta-button {
-        padding: 0.7rem 1.8rem; /* Smaller CTA button */
-        font-size: 0.9rem;
-    }
-
-    .content-section {
-        padding: 4rem 0;
-    }
-
-    .section-title {
-        font-size: 1.8rem; /* Smaller section titles */
-    }
-
-    .course-card {
-        padding: 1.5rem; /* Smaller card padding */
-    }
-
-    .courses-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
-    }
+.footer-about, .footer-contact {
+    flex: 1;
+    min-width: 250px;
 }
 
-@media (max-width: 600px) {
-    .table-header {
-        font-size: 0.8rem; /* Smaller header font */
-    }
+.footer-title {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
 
-    .table-row > div {
-        padding: 1rem 0.75rem; /* Adjust padding */
-        font-size: 0.85rem; /* Smaller row font */
-    }
+.footer-about p {
+    font-size: 0.9rem;
+}
+
+.contact-list {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.contact-list li {
+    margin-bottom: 0.5rem;
 }
